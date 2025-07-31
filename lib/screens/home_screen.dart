@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:getx/screens/second_page.dart';
+
+import '../app/modules/home/view.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -10,7 +11,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("D A S H B O A R D"),
+        title: Text("Dashboard"),
         leading: IconButton(
           onPressed: () {
             // Navigator.pop(context);
@@ -28,7 +29,7 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () {
                   Get.to(SecondPage());
                 },
-                child: Text(" d a t a "),
+                child: Text(" M Y D A T A "),
               ),
             ],
           ),
